@@ -1,0 +1,53 @@
+<!--1-hr: bir satır çizgi çeker
+    2-br: bir satır boşluk bırakır
+    3- strong:kalın yapar
+    4-b: kalın yapar (strong ile aynı işlevi görür)
+    5-i: italic yapar
+    6-mark: yazılan şeyi sarı arka plan yapar
+    7-center: resim veya yazıyı ortalar
+    8-a: link vermek için kullanılır
+        (target="_blank" : yeni sekmede açar)
+        a elementinin içine img elementi koyarak resim linki de verebiliriz.
+    9-ol(ordinary list) , ul(unordinary list)
+    10-table, tr , td(table dataa) , th(table header) , rowspan-colspan: tablo
+    11-inline ve block mantığı
+    12-div: . = class , # = id 
+
+---------------form kullanımı------------------
+    <input type="text"> : metin girişi için kullanılır
+    <input type="password"> : şifre girişi için kullanılır (gizli yazar)
+    <input type="email"> : e-posta girişi için kullanılır (doğrulama yapar)
+    <input type="checkbox"> : onay kutusu (kutucuk isaretliyon)
+    <input type="radio"> : radio butonu (birden fazla seçenekten birini seçmek için kullanılır)
+    <input type="file"> : dosya yüklemek için kullanılır (resim, video, ses dosyası vb.)
+    <input type="submit"> : formu göndermek için kullanılır (buton)
+    <input type="reset"> : formu sıfırlamak için kullanılır (buton)
+    <textarea id>="mesajInput" name="mesaj" rows="4" cols="50"> : çok satırlı metin girişi için kullanılır (textarea)
+    <select> <option> : açılır liste (dropdown) oluşturmak için kullanılır
+    <form action="veritabanı.db"> : formun gönderileceği adresi belirtir (action)
+        -->
+<!DOCTYPE html>
+<head>
+    <title>form test1</title>
+</head>
+<body>
+    <form>
+        <input type="text" placeholder="kullanıcı adı">
+        <input type="password" placeholder="şifreniz">
+        <input type="email" placeholder="email adres"><br>
+        kitap okuyorum : <input type="checkbox" id="kitapCheckbox"><br>
+        spor yapıyorum : <input type="checkbox" id="sporCheckbox"><br>
+        Kadın : <input type="radio" value="cinsiyetRadio"><br>
+        Erkek : <input type="radio" value="cinsiyetRadio"><br>
+        <input type="file" id="dosyaInput"><br><br>
+        İçecek Seçiniz : <select name="" id="">
+            <option value="Cay">Çay</option>
+            <option value="Kahve">Kahve</option>
+            <option value="Limonata">Limonata</option>
+        </select><br><br>
+        <textarea name="mesajInput" id="mesajAlani" cols="60" rows="10"></textarea><br>
+        <input type="submit" value="Gönder">    
+        <input type="reset" value="Temizle"><br>
+    </form>
+</body>
+</html>

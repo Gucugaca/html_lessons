@@ -1,0 +1,64 @@
+<!--1-hr: bir satır çizgi çeker
+    2-br: bir satır boşluk bırakır
+    3- strong:kalın yapar
+    4-b: kalın yapar (strong ile aynı işlevi görür)
+    5-i: italic yapar
+    6-mark: yazılan şeyi sarı arka plan yapar
+    7-center: resim veya yazıyı ortalar
+    8-a: link vermek için kullanılır
+        (target="_blank" : yeni sekmede açar)
+        a elementinin içine img elementi koyarak resim linki de verebiliriz.
+    9-ol(ordinary list) , ul(unordinary list)
+    10-table, tr , td(table dataa) , th(table header) , rowspan-colspan: tablo
+    11-inline ve block mantığı
+    12-div: . = class , # = id 
+
+---------------form kullanımı------------------
+    <input type="text"> : metin girişi için kullanılır
+    <input type="password"> : şifre girişi için kullanılır (gizli yazar)
+    <input type="email"> : e-posta girişi için kullanılır (doğrulama yapar)
+    <input type="checkbox"> : onay kutusu (kutucuk isaretliyon)
+    <input type="radio"> : radio butonu (birden fazla seçenekten birini seçmek için kullanılır)
+    <input type="file"> : dosya yüklemek için kullanılır (resim, video, ses dosyası vb.)
+    <input type="submit"> : formu göndermek için kullanılır (buton)
+    <input type="reset"> : formu sıfırlamak için kullanılır (buton)
+    <textarea id>="mesajInput" name="mesaj" rows="4" cols="50"> : çok satırlı metin girişi için kullanılır (textarea)
+    <select> <option> : açılır liste (dropdown) oluşturmak için kullanılır
+    <form action="veritabanı.db"> : formun gönderileceği adresi belirtir (action)
+        -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table testi 2</title>
+</head>
+
+<body>
+    <table border="1">
+        <tr>
+            <th colspan="3">Product</th>
+        </tr>
+        <tr>
+            <th>No</th>
+            <th>P.Name</th>
+            <th>P.Count</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Pen</td>
+            <td rowspan="3">50</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Book</td>
+        </tr>ü
+        <tr>
+            <td>3</td>
+            <td>Dust</td>
+        </tr>
+    </table>
+</body>
+
+</html>

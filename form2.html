@@ -1,0 +1,100 @@
+
+<!--1-hr: bir satır çizgi çeker
+    2-br: bir satır boşluk bırakır
+    3- strong:kalın yapar
+    4-b: kalın yapar (strong ile aynı işlevi görür)
+    5-i: italic yapar
+    6-mark: yazılan şeyi sarı arka plan yapar
+    7-center: resim veya yazıyı ortalar
+    8-a: link vermek için kullanılır
+        (target="_blank" : yeni sekmede açar)
+        a elementinin içine img elementi koyarak resim linki de verebiliriz.
+    9-ol(ordinary list) , ul(unordinary list)
+    10-table, tr , td(table dataa) , th(table header) , rowspan-colspan: tablo
+    11-inline ve block mantığı
+    12-div: . = class , # = id 
+
+---------------form kullanımı------------------
+    <input type="text"> : metin girişi için kullanılır
+    <input type="password"> : şifre girişi için kullanılır (gizli yazar)
+    <input type="email"> : e-posta girişi için kullanılır (doğrulama yapar)
+    <input type="checkbox"> : onay kutusu (kutucuk isaretliyon)
+    <input type="radio"> : radio butonu (birden fazla seçenekten birini seçmek için kullanılır)
+    <input type="file"> : dosya yüklemek için kullanılır (resim, video, ses dosyası vb.)
+    <input type="submit"> : formu göndermek için kullanılır (buton)
+    <input type="reset"> : formu sıfırlamak için kullanılır (buton)
+    <textarea id>="mesajInput" name="mesaj" rows="4" cols="50"> : çok satırlı metin girişi için kullanılır (textarea)
+    <select> <option> : açılır liste (dropdown) oluşturmak için kullanılır
+    <form action="veritabanı.db"> : formun gönderileceği adresi belirtir (action)
+        --><!DOCTYPE html>
+    <style>
+        .divForm{
+            width: 300px;
+            background-color: beige;
+        }
+    </style>
+<head>
+    <title>form2</title>
+</head>
+<body>
+    <div class="divForm">
+    <form>
+        <table>
+            <tr>
+                <td>Ad :<input type="text"></td>
+            </tr>
+            <tr>
+                <td>Soyad : <input type="text"></td>
+            </tr>
+            <tr>
+                <td>Email Adres : <input type="email"></td>
+            </tr>
+            <tr>
+                <td>Şifre : <input type="password"></td>
+            </tr>
+            <tr>
+                <td><input type="radio" id="erkekRadio" name="cinsiyetRadio" value="Erkek">
+                    <label for="erkekRadio">Erkek</label>
+                    <input type="radio" id="kadınRadio" name="cinsiyetRadio" value="Kadın">
+                    <label for="kadınRadio">Kız</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Doğum Tarihi : <input type="date"></td>
+            </tr>
+            <tr>
+                <th colspan="2">Hobiler</th>
+            </tr>
+            <tr>
+                <td>Kitap Okumak : <input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>Spor Yapmak : <input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>Ensturman Çalmak : <input type="checkbox"></td>
+            </tr>
+            <tr>
+
+                <td>Resim Yükleyiniz : <input type="file"></td>
+            </tr>
+            
+            <tr>
+                <td><textarea name="mesajInput" id="mesajAlani" cols="38" rows="10" placeholder="Mesajınızı buraya giriniz"></textarea></td>
+            </tr>
+            <tr>
+                <td>Okudum Onaylıyorum : <input type="radio" name="sozlesmeRadio" checked></td>
+            </tr>
+            <tr>
+                <td>Okudum Onaylamıyorum : <input type="radio" name="sozlesmeRadio"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Gönder"></td>
+                <td><input type="reset" value="Temizle"></td>
+            </tr>
+            
+        </table>
+    </form>
+    </div>
+</body>
+</html>
