@@ -1,0 +1,49 @@
+<!--1-hr: bir satır çizgi çeker
+    2-br: bir satır boşluk bırakır
+    3- strong:kalın yapar
+    4-b: kalın yapar (strong ile aynı işlevi görür)
+    5-i: italic yapar
+    6-mark: yazılan şeyi sarı arka plan yapar
+    7-center: resim veya yazıyı ortalar
+    8-a: link vermek için kullanılır
+        (target="_blank" : yeni sekmede açar)
+        a elementinin içine img elementi koyarak resim linki de verebiliriz.
+    9-ol(ordinary list) , ul(unordinary list)
+    10-table, tr , td(table dataa) , th(table header) , rowspan-colspan: tablo
+    11-div: . = class , # = id 
+        -->
+<!DOCTYPE html>
+    <style>
+        .divÖzellik1 {
+            width: 1500px;
+            height: 100px;
+            background-color: rgb(253, 130, 130);
+            margin-bottom: 20px; 
+            text-align: center;
+        }
+        #divÖzellik2 {
+            width: 1500px;
+            height: 500px;
+            background-color: rgb(130, 148, 253);
+            margin-bottom: 10px; 
+            text-align: center;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DivDers</title>
+</head>
+
+<body>
+    <div class="divÖzellik1">
+        <h3>Bu bir test sayfasıdır</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, reiciendis!</p>
+    </div>
+    <div id="divÖzellik2">
+        <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid veniam aspernatur similique rem doloremque quidem corrupti porro animi hic ab!</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+</body>
+
+</html>
